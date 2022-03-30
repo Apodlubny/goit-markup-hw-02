@@ -5,12 +5,16 @@
   --tertiary-bgc: #f5f4fa;
   --primary-white: #ffffff;
   --primary-grey: #2f303a;
+  --logo-color: #000000;
+  --btn-bgc: #188ce8;
+  --contacts-color: rgba(255, 255, 255, 0.6);
 }
 /* common */
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--primary-white);
   color: var(--primary-text-color);
+  font-size: 14px;
 }
 .list {
   list-style: none;
@@ -27,7 +31,7 @@ body {
   color: var(--accent-color);
 }
 .logo {
-  color: #000000;
+  color: var(--logo-color);
 }
 .web,
 .logo,
@@ -41,7 +45,6 @@ body {
 }
 .site-nav {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -56,7 +59,6 @@ body {
 }
 .contacts-list {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -94,7 +96,7 @@ body {
 }
 .hero-button:hover,
 .hero-button:focus {
-  background-color: #188ce8;
+  background-color: var(--btn-bgc);
 }
 /* advantages+what we do section */
 .section-title,
@@ -112,14 +114,12 @@ body {
 }
 .section-item {
   font-weight: bold;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .section-text {
   color: var(--primary-text-color);
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
@@ -160,28 +160,20 @@ body {
   color: var(--primary-white);
   text-decoration: inherit;
   font-style: normal;
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.mail {
-  color: rgba(255, 255, 255, 0.6);
-}
-.tel {
-  color: rgba(255, 255, 255, 0.6);
-}
 .mail,
 .tel {
-  font-size: 14px;
+  color: var(--contacts-color);
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 .address:hover,
+.address:focus,
 .mail:hover,
-.tel:hover {
-  color: var(--accent-color);
-}
 .mail:focus,
+.tel:hover,
 .tel:focus {
   color: var(--accent-color);
 }
